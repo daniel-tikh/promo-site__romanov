@@ -34,7 +34,7 @@
                                 В «слепых» дегустациях сравнивались лучшие российские и западные водки на рынке.
                                 <br>
                                 В итоге выбор был сделан в пользу классического для русской водки состава:
-                                <br>«Вода питьевая исправленная, спирт этиловый ректификованный «АЛЬФА» из пищевого сырья, настой пшеницы, сахар».
+                                <br>«Вода питьевая исправленная, спирт этиловый ректификованный «Люкс» (зерновой), сахар белый, настой пшеницы».
                             </div>
                             <div class="romanov-product__list">
                                 <div class="romanov-product__list--item">
@@ -130,7 +130,11 @@
             </div>
             <div class="romanov-present container">
                 <div class="romanov-present__content">
-                    <div class="romanov-present__text">Водка ROMANOV 0,7 в подарчной упаковке.</div>
+                    <div class="romanov-present__text">Водка
+                      <span class="romanov-present__text__it">
+                        ROMANOV
+                      </span>
+                      0,7 в подарочной упаковке.</div>
                     <div class="romanov-present__text">Лафитник из богемского стекла в подарок.</div>
                 </div>
                 <div class="romanov-present__image">

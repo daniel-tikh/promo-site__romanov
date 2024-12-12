@@ -72,11 +72,11 @@ export default {
                         name: "COGNAC VSOP",
                         route: "/cognac"
                     },
-                    // {
-                    //     id: 13,
-                    //     name: "VODKA ALEXANDER I",
-                    //     route: "/romanov-3"
-                    // },
+                    {
+                        id: 13,
+                        name: "ALEXANDER I",
+                        route: "/alexander"
+                    },
                 ],
             },
             {

@@ -28,7 +28,6 @@ export default {
             }
             this.increase(1);
         }, this.duration / 100)
-
     },
     methods: {
         start () {
@@ -39,11 +38,11 @@ export default {
             this.$nuxt.$emit('loaded')
         },
         increase (num) {
-            this.percent = Math.min(100, Math.floor(this.percent + num))            
+            this.percent = Math.min(100, Math.floor(this.percent + num))
         },
     }
 }
 </script>
 <style lang="">
-    
+
 </style>
