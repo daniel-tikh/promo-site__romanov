@@ -21,7 +21,7 @@
                         <div class="footer__info--text">
                             Информация, опубликованная на сайте, не является публичной офертой, определяемой положениями Гражданского кодекса Российской Федерации. <br>Информация размещена в ознакомительных целях и может быть изменена без предварительного уведомления.
                         </div>
-                        <div class="footer__info--text">© 2023, ООО "Постнофф и Ко" Все права защищены.</div>
+                        <div class="footer__info--text">© 2023-{{ new Date().getFullYear() }}, ООО "Постнофф и Ко" Все права защищены.</div>
                     </div>
                     <div class="footer__right">
                         <div class="footer__made">
@@ -77,6 +77,11 @@ export default {
                         name: "ALEXANDER I",
                         route: "/alexander"
                     },
+                  {
+                    id: 14,
+                    name: "ROMANOV SAINT-PETERSBURG",
+                    route: "/saint-petersburg"
+                  },
                 ],
             },
             {

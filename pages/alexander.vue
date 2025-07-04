@@ -90,7 +90,7 @@ export default {
           <br>
           <b>Крепость:</b> 40%<br>
           <br>
-          <b>Объем:</b> 0,7л
+          <b>Объем:</b> 0,5 л; 0,7 л
         </div>
 
         <div class="bg-item">
