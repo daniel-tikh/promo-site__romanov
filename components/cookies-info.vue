@@ -1,5 +1,5 @@
 <template>
-<div id="cookie">
+<div id="cookie cookies-info__container">
 
   <h2>Политика использования cookie-файлов</h2>
 
@@ -49,4 +49,118 @@
 
 </div>
 </template>
+
+<style scoped>
+
+  .cookies-info__container {
+  max-width: 800px;                 
+  margin: 0 auto;                   
+  padding: 20px 30px;               
+  line-height: 1.6;                 
+  color: #333;                      
+  font-size: 16px;                  
+  font-family: "Arial", sans-serif; 
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+
+  /* Для модалки с прокруткой */
+  max-height: 80vh; 
+  overflow-y: auto; 
+  scrollbar-width: thin; 
+  scrollbar-color: #bbb #f9f9f9;
+}
+
+/* Стилизация скроллбара для WebKit */
+.cookies-info__container::-webkit-scrollbar {
+  width: 8px;
+}
+.cookies-info__container::-webkit-scrollbar-track {
+  background: #f9f9f9;
+}
+.cookies-info__container::-webkit-scrollbar-thumb {
+  background-color: #bbb;
+  border-radius: 4px;
+}
+
+.cookies-info__container > h2,
+.cookies-info__container > div > h2 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.cookies-info__container > div {
+  padding-left: 15px;
+  margin-top: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  color: #111;
+  font-weight: 700;
+  margin: 1.5em 0 0.8em;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5em;
+  margin-bottom: 0.8em;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1.2em;
+  padding-left: 8px;
+  text-align: justify;
+}
+
+a {
+  color: #4a90e2;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #2a6bb8;
+}
+
+@media (max-width: 600px) {
+  .cookies-info__container {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+  }
+}
+
+.btn-back {
+  margin-top: 20px;
+  background-color: #4a90e2;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-back:hover {
+  background-color: #2a6bb8;
+}
+
+
+</style>
 
