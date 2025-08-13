@@ -1,18 +1,31 @@
 <template>
     <div id="cookie_notification">
         <p class="cookie_text">
-            Этот сайт использует <a href="#">cookie-файлы</a>.
+            Этот сайт использует <span class="cookie_link" @click="showModal = true">cookie-файлы</span>.
         </p>
         <button class="cookie_accept">Принять</button>
+
+        <Modal v-if="showModal" @close="showModal = false">
+          <CookiesInfo />
+        </Modal>
     </div>
 </template>
 
 <!-- Cookies -->
 
 <script>
+  import Modal from './ModalWindow.vue'
+  import CookiesInfo from './cookies-info.vue'
 
   export default 
   {
+    components: { Modal, CookiesInfo },
+    data() {
+      return {
+        showModal: false
+      }
+    },
+
     mounted() {
       this.checkCookies();
     },
@@ -39,6 +52,10 @@
 <style>
 
   /* Cookies */
+
+  .cookie_link {
+    color: #1f1ff0;
+  }
 
   @media screen {
     #cookie_notification {
