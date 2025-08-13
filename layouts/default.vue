@@ -196,3 +196,16 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+
+.footer__links p {
+    color: #646665;
+    cursor: pointer;
+}
+
+.footer__links p:hover{
+    color: #898d8c;
+}
+
+</style>
