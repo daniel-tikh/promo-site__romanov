@@ -13,6 +13,19 @@
             <header-app />
             <main-menu :menu="menu" :allMenu="allMenu" :current-path="currentPath"/>
             <CookiesPopUp/>
+
+            <ModalWindow v-if="modalToShow === 'cookie_info'" @close="modalToShow = ''">
+                <CookiesInfo />
+            </ModalWindow>
+
+            <ModalWindow v-if="modalToShow === 'privacy_policy'" @close="modalToShow = ''">
+                <PrivacyPolicy/>
+            </ModalWindow>
+
+            <ModalWindow v-if="modalToShow === 'user_agreement'" @close="modalToShow = ''">
+                <UserAgreement/>
+            </ModalWindow>
+
             <div class="app__inner">
                 <nuxt />
             </div>
@@ -24,11 +37,22 @@
                         </div>
                         <div class="footer__info--text">© 2023-{{ new Date().getFullYear() }}, ООО "Постнофф и Ко" Все права защищены.</div>
                     </div>
-                    <div class="footer__right">
-                        <div class="footer__made">
-                            Сделано в 
-                            <a href="http://stickyhands.ru/" target="_blank">StickyHands</a>
-                        </div>
+                    <div class="footer__links">
+
+                        <p class="cookie_info_link"    @click="modalToShow = 'cookie_info'   "> 
+                            Правила использования Cookie
+                        </p>
+
+                        <p class="privacy_policy_link" @click="modalToShow = 'privacy_policy'   ">
+                            Политика конфиденциальности
+                        </p>
+
+                        <p class="user_agreement_link" @click="modalToShow = 'user_agreement'   ">
+                            Пользовательское соглашение
+                        </p>
+
+                        
+
                     </div>
                 </div>
             </footer>
@@ -50,14 +74,23 @@ import Reject from '../components/Reject.vue'
 import BackgroundLogo from '../components/svg/BackgroundLogo.vue'
 import CookiesPopUp from '../components/CookiesPopUp.vue'
 
+import ModalWindow from '../components/ModalWindow.vue'
+import CookiesInfo from '../components/CookiesInfo.vue'
+import PrivacyPolicy from '../components/PrivacyPolicy.vue'
+import UserAgreement from '../components/UserAgreement.vue'
+
 export default {
-  components: { BackgroundLogo, Agreement, Reject, HeaderApp, MainMenu, CookiesPopUp },
+  components: { 
+    BackgroundLogo, Agreement, Reject, HeaderApp, MainMenu, CookiesPopUp, 
+    ModalWindow, CookiesInfo, PrivacyPolicy, UserAgreement
+  },
   name: 'default',
   data() {
     return {
         showAgreement: true,
         showReject: false,
         loaded: false,
+        modalToShow: "",
         menu: [
             {
                 id: 0,

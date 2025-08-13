@@ -15,7 +15,7 @@
 
 <script>
   import Modal from './ModalWindow.vue'
-  import CookiesInfo from './cookies-info.vue'
+  import CookiesInfo from './CookiesInfo.vue'
 
   export default 
   {
