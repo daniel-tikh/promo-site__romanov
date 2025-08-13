@@ -13,7 +13,43 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap' },
+      {
+        rel: 'preload', href: '/include/fonts/montserrat-bold.woff2',
+        as: 'font', type: 'font/woff2', crossorigin: 'crossorigin'
+      },
+      {
+        rel: 'preload', href: '/include/fonts/montserrat-light.woff2',
+        as: 'font', type: 'font/woff2', crossorigin: 'crossorigin'
+      },
+      {
+        rel: 'preload', href: '/include/fonts/montserrat-medium.woff2',
+        as: 'font', type: 'font/woff2', crossorigin: 'crossorigin'
+      },
+      {
+        rel: 'preload', href: '/include/fonts/montserrat-regular.woff2',
+        as: 'font', type: 'font/woff2', crossorigin: 'crossorigin'
+      },
+      {
+        rel: 'preload', href: '/include/fonts/montserrat-semibold.woff2',
+        as: 'font', type: 'font/woff2', crossorigin: 'crossorigin'
+      },
+
+      {
+        rel: 'preload', href: '/include/fonts/playfairdisplay-bold.woff2',
+        as: 'font', type: 'font/woff2', crossorigin: 'crossorigin'
+      },
+      {
+        rel: 'preload', href: '/include/fonts/playfairdisplay-medium.woff2',
+        as: 'font', type: 'font/woff2', crossorigin: 'crossorigin'
+      },
+      {
+        rel: 'preload', href: '/include/fonts/playfairdisplay-regular.woff2',
+        as: 'font', type: 'font/woff2', crossorigin: 'crossorigin'
+      },
+      {
+        rel: 'preload', href: '/include/fonts/playfairdisplay-semibold.woff2',
+        as: 'font', type: 'font/woff2', crossorigin: 'crossorigin'
+      },
     ]
   },
 
