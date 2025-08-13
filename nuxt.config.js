@@ -3,7 +3,7 @@ export default {
   head: {
     title: 'Торговый дом Романов',
     htmlAttrs: {
-      lang: 'en'
+      lang: 'ru'
     },
     meta: [
       { charset: 'utf-8' },
@@ -19,7 +19,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    'swiper/dist/css/swiper.css',
+    'swiper/css/swiper.css',
     '~/assets/css/fonts.css',
     '~/assets/css/index.css',
   ],
