@@ -29,3 +29,93 @@
     font-display: swap;
     src: url(../fonts/Rockwell-Bold.ttf) format("truetype")
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src:  local("Montserrat Light"), local("MontserratLight"),
+    url("/include/fonts/montserrat-light.woff2") format("woff2"),
+    url("/include/fonts/montserrat-light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:  local("Montserrat Regular"), local("MontserratRegular"),
+    url("/include/fonts/montserrat-regular.woff2") format("woff2"),
+    url("/include/fonts/montserrat-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:  local("Montserrat Medium"), local("MontserratMedium"),
+    url("/include/fonts/montserrat-medium.woff2") format("woff2"),
+    url("/include/fonts/montserrat-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:  local("Montserrat SemiBold"), local("MontserratSemiBold"),
+    url("/include/fonts/montserrat-semibold.woff2") format("woff2"),
+    url("/include/fonts/montserrat-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src:  local("Montserrat Bold"), local("MontserratBold"),
+    url("/include/fonts/montserrat-bold.woff2") format("woff2"),
+    url("/include/fonts/montserrat-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src:  local("Playfair Display Regular"), local("PlayfairDisplayRegular"),
+    url("/include/fonts/playfairdisplay-regular.woff2") format("woff2"),
+    url("/include/fonts/playfairdisplay-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src:  local("Playfair Display Medium"), local("PlayfairDisplayMedium"),
+    url("/include/fonts/playfairdisplay-medium.woff2") format("woff2"),
+    url("/include/fonts/playfairdisplay-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src:  local("Playfair Display SemiBold"), local("PlayfairDisplaySemiBold"),
+    url("/include/fonts/playfairdisplay-semibold.woff2") format("woff2"),
+    url("/include/fonts/playfairdisplay-semibold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  src:  local("Playfair Display Bold"), local("PlayfairDisplayBold"),
+    url("/include/fonts/playfairdisplay-bold.woff2") format("woff2"),
+    url("/include/fonts/playfairdisplay-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
