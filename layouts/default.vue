@@ -12,6 +12,7 @@
         <div class="app__wrapper">
             <header-app />
             <main-menu :menu="menu" :allMenu="allMenu" :current-path="currentPath"/>
+            <CookiesPopUp/>
             <div class="app__inner">
                 <nuxt />
             </div>
@@ -47,9 +48,10 @@ import HeaderApp from '../components/layout/HeaderApp.vue'
 import MainMenu from '../components/layout/MainMenu.vue'
 import Reject from '../components/Reject.vue'
 import BackgroundLogo from '../components/svg/BackgroundLogo.vue'
+import CookiesPopUp from '../components/CookiesPopUp.vue'
 
 export default {
-  components: { BackgroundLogo, Agreement, Reject, HeaderApp, MainMenu },
+  components: { BackgroundLogo, Agreement, Reject, HeaderApp, MainMenu, CookiesPopUp },
   name: 'default',
   data() {
     return {
