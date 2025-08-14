@@ -54,7 +54,15 @@
   /* Cookies */
 
   .cookie_link {
-    color: #1f1ff0;
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  .cookie_link:hover {
+    color: black;
+
+    text-decoration: none;
   }
 
   @media screen {
