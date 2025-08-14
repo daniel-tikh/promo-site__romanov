@@ -122,14 +122,15 @@ p {
 }
 
 a {
-  color: #4a90e2;
+  color: #333;
   text-decoration: underline;
   cursor: pointer;
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: #2a6bb8;
+  color: #333;
+  text-decoration: none;
 }
 
 @media (max-width: 600px) {

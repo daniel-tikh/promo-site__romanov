@@ -200,12 +200,16 @@ export default {
 <style scoped>
 
 .footer__links p {
-    color: #646665;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration: underline;
+    color: #898d8c;
     cursor: pointer;
 }
 
 .footer__links p:hover{
     color: #898d8c;
+    text-decoration: none;
 }
 
 </style>
