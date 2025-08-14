@@ -1,4 +1,10 @@
 export default {
+
+  // ssg генерация
+  target: 'static', 
+    router: {
+      trailingSlash: false
+    },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Торговый дом Романов',
@@ -63,7 +69,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     '~/plugins/directives',
-    {src:'~/plugins/swiper.js',ssr: false}
+    { src: '~/plugins/swiper.js', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
